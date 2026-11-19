@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English 6th Prep 2027 — سادس</title>
+  <style>
+    :root {
+      --bg: #f4f6fb;
+      --card: #ffffff;
+      --text: #1b2232;
+      --primary: #1e40af;
+      --primary-soft: #e0e7ff;
+      --accent: #0f766e;
+      --accent-soft: #ccfbf1;
+      --border: #dde3ee;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #0f766e);
+      color: #fff;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 6px; font-size: 1.4rem; }
+    header p { margin: 0; opacity: 0.92; font-size: 0.92rem; }
+    nav {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 10px 14px;
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav button {
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      padding: 8px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      white-space: nowrap;
+      font-weight: 600;
+      font-size: 0.86rem;
+    }
+    nav button.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+    main {
+      max-width: 900px;
+      margin: 18px auto;
+      padding: 0 14px 40px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+    }
+    .card h2 { margin: 0 0 10px; font-size: 1.15rem; color: var(--primary); }
+    .card h3 { margin: 14px 0 6px; font-size: 1rem; color: var(--accent); }
+    .badge {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .en-box {
+      direction: ltr;
+      text-align: left;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin: 8px 0;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 0.95rem;
+      margin-top: 6px;
+    }
+    .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+    .btn {
+      border: none;
+      border-radius: 8px;
+      padding: 8px 14px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.88rem;
+    }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-soft { background: var(--primary-soft); color: var(--primary); }
+    .answer-box {
+      display: none;
+      margin-top: 10px;
+      padding: 10px 12px;
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      border-radius: 8px;
+      color: #065f46;
+      font-size: 0.9rem;
+    }
+    .hidden { display: none; }
+    ul { padding-right: 20px; margin: 6px 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>English 6th Prep 2027 — سادس</h1>
+    <p>الشرح، التمارين ليحلها الطالب، القطع والإنشاء، الوحدات 1–8، كتاب النشاط والأدب</p>
+  </header>
+
+  <nav id="tabs">
+    <button class="active" data-tab="u1">الوحدة 1</button>
+    <button data-tab="u2">الوحدة 2</button>
+    <button data-tab="u3">الوحدة 3</button>
+    <button data-tab="u4">الوحدة 4</button>
+    <button data-tab="more">الوحدات 5–8 والنشاط والأدب</button>
+  </nav>
+
+  <main>
+    <section id="u1" class="tab-panel">
+      <div class="card">
+        <span class="badge">Unit 1 — Health and Accidents</span>
+        <h2>الدرس الأول والمفردات (hurt / sore / pain)</h2>
+        <p><strong>hurt (فعل):</strong> يتبع زمن الجملة وموقعه بعد الفاعل (My feet hurt today). <strong>sore (صفة):</strong> تأتي غالباً بعد أفعال الكينونة (My feet are sore). <strong>pain (اسم):</strong> يأتي بعد أدوات التعريف/التنكير أو صفات التملك (I have a pain in my stomach).</p>
+        <h3>تمرين للطالب:</h3>
+        <div class="en-box">
+          1. My feet __________ today.<br/>
+          2. My feet are __________.<br/>
+          3. I have a __________ in my stomach.
+        </div>
+        <input type="text" id="t-u1" placeholder="اكتب حلك هنا..." />
+        <div class="actions">
+          <button class="btn btn-soft" onclick="toggleBox('h-u1')">تلميح</button>
+          <button class="btn btn-primary" onclick="saveAndShow('t-u1', 'a-u1')">عرض الحل</button>
+        </div>
+        <div id="h-u1" class="answer-box">تذكر: hurt فعل، sore صفة، pain اسم بعد a.</div>
+        <div id="a-u1" class="answer-box">1. hurt — 2. sore — 3. pain</div>
+      </div>
+
+      <div class="card">
+        <h2>الأفعال العبارية، الماضي البسيط والمستمر، البادئات، والإنشاء</h2>
+        <ul>
+          <li><strong>Phrasal Verbs:</strong> إذا كان المفعول به ضميراً (it, them, him) يوضع بين الفعل وحرف الجر (give it up).</li>
+          <li><strong>Past Simple &amp; Continuous:</strong> While / As + ماضي مستمر (was/were + V-ing)؛ و When / And + ماضي بسيط.</li>
+          <li><strong>Prefixes:</strong> ir- مع R، im- مع M/P (شواذ: unpopular, unpleasant)، il- مع L، in- للمجموعة المحددة، un- للمجموعة العامة.</li>
+        </ul>
+        <div class="en-box">
+          <strong>How to reduce car accidents:</strong> There are thousands of car accidents a year which cause serious injuries. Drivers must not get distracted while driving and should focus safely on the road. It is important to prevent using phones for texting or emails. Those who break the law should be punished and may have their licence permanently banned. Consequently, following map apps carefully helps reduce the risk of accidents.
+        </div>
+      </div>
+    </section>
+
+    <section id="u2" class="tab-panel hidden">
+      <div class="card">
+        <span class="badge">Unit 2 — Law and Order</span>
+        <h2>الإلزام والمنع، النصيحة والطلبات والاقتراحات والعروض، التوقع، والأفعال السببية</h2>
+        <ul>
+          <li><strong>must / have to / need to:</strong> إلزام — <strong>mustn't:</strong> منع قاطع — <strong>don't have to / needn't:</strong> عدم ضرورة.</li>
+          <li><strong>Expectation:</strong> نحذف I think ... will ونعوّض بـ should، ونحذف I don't think ... will ونعوّض بـ shouldn't (و is تصبح be).</li>
+          <li><strong>Causative Verbs:</strong> have / get + مفعول به + P.P.؛ و make + مفعول به + فعل مجرد.</li>
+        </ul>
+        <h3>تمرين التوقع (37/D — ليحله الطالب):</h3>
+        <div class="en-box">You have always wanted to fly. I think you will like the Air Force.</div>
+        <input type="text" id="t-u2" placeholder="اكتب حلك هنا..." />
+        <div class="actions">
+          <button class="btn btn-primary" onclick="saveAndShow('t-u2', 'a-u2')">عرض الحل</button>
+        </div>
+        <div id="a-u2" class="answer-box">You should like the Air Force.</div>
+      </div>
+    </section>
+
+    <section id="u3" class="tab-panel hidden">
+      <div class="card">
+        <span class="badge">Unit 3 — Careers, Conditionals, Reported Speech &amp; Regret</span>
+        <h2>الجمل الشرطية الأربع، الكلام المنقول، والندم</h2>
+        <ul>
+          <li><strong>Zero:</strong> If + مضارع بسيط ⬅ مضارع بسيط. <strong>First:</strong> If + مضارع بسيط ⬅ will/can/may + مجرد.</li>
+          <li><strong>Second:</strong> If + ماضي بسيط ⬅ would/could/might + مجرد. <strong>Third:</strong> If + ماضي تام ⬅ would/could have + P.P.</li>
+          <li><strong>Reported Speech &amp; Regret:</strong> إرجاع الزمن خطوة للماضي في المنقول؛ و I wish / If only + ماضي تام للندم.</li>
+        </ul>
+        <h3>تمرين الندم (58/A — ليحله الطالب):</h3>
+        <div class="en-box">He didn't study hard and now he has failed the exam.</div>
+        <input type="text" id="t-u3" placeholder="اكتب حلك هنا..." />
+        <div class="actions">
+          <button class="btn btn-primary" onclick="saveAndShow('t-u3', 'a-u3')">عرض الحل</button>
+        </div>
+        <div id="a-u3" class="answer-box">If only he had studied harder.</div>
+      </div>
+    </section>
+
+    <section id="u4" class="tab-panel hidden">
+      <div class="card">
+        <span class="badge">Unit 4 — Revision &amp; Review</span>
+        <h2>مفردات المشاريع الناشئة وتقنيات اللياقة البدنية والإنشاء</h2>
+        <p>start-up business, business plan, investor, loan, profit, marketing, target market, fitness tech, wearable device, app, track, goal, motivation, feature.</p>
+        <div class="en-box">
+          <strong>Starting a Start-up Business:</strong> Starting a start-up business can be challenging, but careful planning makes success much more likely. First, entrepreneurs need a clear idea that solves a real problem or meets a growing demand in the market. Writing a good business plan helps them organize their goals, estimate costs, and attract investors or get a loan. Effective marketing is also essential so that customers know about the new product or service. Although there are risks and hard work at the beginning, a well-managed start-up can grow steadily and become profitable over time.
+        </div>
+      </div>
+    </section>
+
+    <section id="more" class="tab-panel hidden">
+      <div class="card">
+        <span class="badge">Units 5–8 · Activity Book · Literature</span>
+        <h2>الوحدات (5–8)، كتاب النشاط، وقسم الأدب</h2>
+        <ul>
+          <li><strong>الوحدات 5 إلى 8:</strong> قواعد ومفردات وقطع الكتاب وتمارين كتاب النشاط مع الإجابات (مع التنبيه إلى عدم تأليف نصوص بديلة في حال عدم توفر النص الكامل للقطعة ضمن الملفات المرفقة).</li>
+          <li><strong>كتاب النشاط (Activity Book):</strong> تنظيم تمارين الوحدات 1 إلى 8 مع الحلول النموذجية المتوفرة.</li>
+          <li><strong>قسم الأدب (Literature):</strong> النصوص الأدبية، الشخصيات، الكتّاب والشعراء وتوثيق المصادر والصفحات، والأسئلة العامة وحلولها (مع استبعاد الأسئلة الوزارية مؤقتاً).</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const tabs = document.querySelectorAll('#tabs button');
+    const panels = document.querySelectorAll('.tab-panel');
+    tabs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabs.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        panels.forEach(p => p.classList.toggle('hidden', p.id !== btn.dataset.tab));
+      });
+    });
+    function toggleBox(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    }
+    function saveAndShow(inputId, boxId) {
+      const inp = document.getElementById(inputId);
+      if (inp) localStorage.setItem(inputId, inp.value);
+      toggleBox(boxId);
+    }
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('input[type="text"]').forEach(inp => {
+        const val = localStorage.getItem(inp.id);
+        if (val) inp.value = val;
+      });
+    });
+  </script>
+</body>
+</html>
